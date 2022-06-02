@@ -165,11 +165,11 @@ def get_readable_message():
                 ]:
                     msg += f"\n<code>{get_progress_bar_string(download)} {download.progress()}</code>"
                     if download.status() == MirrorStatus.STATUS_DOWNLOADING:
-                        msg += f"\n<b>📥 Downloaded:</b> {get_readable_file_size(download.processed_bytes())}<b>\n💾 Size</b>: {download.size()}"
+                        msg += f"\n<b>🔽🔽 Downloaded:</b> {get_readable_file_size(download.processed_bytes())}<b>\n💾 Size</b>: {download.size()}"
                     elif download.status() == MirrorStatus.STATUS_CLONING:
                         msg += f"\n<b>♻️ Cloning:</b> {get_readable_file_size(download.processed_bytes())}<b>\n<b>⚙️ Engine: ʀᴄʟᴏɴᴇ</b>\n💾 Size</b>: {download.size()}"
                     else:
-                        msg += f"\n<b>📤 Uploaded:</b> {get_readable_file_size(download.processed_bytes())}<b>\n<b>⚙️ Engine: ʀᴄʟᴏɴᴇ</b>\n💾 Size</b>: {download.size()}"
+                        msg += f"\n<b>🔼🔼 Uploaded:</b> {get_readable_file_size(download.processed_bytes())}<b>\n<b>⚙️ Engine: ʀᴄʟᴏɴᴇ</b>\n💾 Size</b>: {download.size()}"
                     msg += f"\n<b>⚡ Speed:</b> {download.speed()}" \
                             f"\n<b>⏳ ETA:</b> {download.eta()} "
                     # if hasattr(download, 'is_torrent'):
@@ -178,7 +178,7 @@ def get_readable_message():
                     except:
                         pass
                     try:
-                        msg += f"\n<b>⚙️ Engine: Aria2</b>\n<b>📶:</b> {download.aria_download().connections}"
+                        msg += f"\n<b>⚙️ Engine: Aria2</b>\n<b>🌐:</b> {download.aria_download().connections}"
                     except:
                         pass
                     try:
