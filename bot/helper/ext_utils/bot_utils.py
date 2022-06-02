@@ -21,13 +21,14 @@ PAGE_NO = 1
 
 
 class MirrorStatus:
-    STATUS_UPLOADING = "🅄🄿🄻🄾🄰🄳🄸🄽🄶"
-    STATUS_DOWNLOADING = "🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶"
-    STATUS_CLONING = "🄲🄻🄾🄽🄽🄸🄽🄶"
-    STATUS_WAITING = "🅀🅄🄴🅄🄴🄳"
-    STATUS_FAILED = "🄵🄰🄸🄻🄴🄳"
-    STATUS_ARCHIVING = "🄰🅁🄲🄷🄸🅅🄸🄽🄶"
-    STATUS_EXTRACTING = "🄴🅇🅃🅁🄰🄲🅃🄸🄽🄶"
+    STATUS_UPLOADING = "Uploading..."
+    STATUS_DOWNLOADING = "Downloading..."
+    STATUS_WAITING = "Queued..."
+    STATUS_FAILED = "Failed. Cleaning download..."
+    STATUS_CANCELLED = "Cancelled."
+    STATUS_ARCHIVING = "Archiving..."
+    STATUS_EXTRACTING = "Extracting..."
+    STATUS_CLONING = "Cloning..."
 
 
 PROGRESS_MAX_SIZE = 100 // 8
